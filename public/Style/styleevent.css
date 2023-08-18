@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@500;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+  
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+  
+.logoHeader img{
+    height: 41px;
+    width: 168px;
+    margin-left: 30px;
+}
+  
+#event{
+    color: #FF9900;
+}
+  
+.nav-links{
+    list-style: none;
+    display:inline-flex;
+}
+  
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    transition: ease-in .15s;
+  }
+  
+  .nav-links a:hover{
+    color: #FF9900;
+    text-decoration: none;
+  }
+  
+.nav-links li:not(:last-child)::after {
+    color: black;
+    content: "|";
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.register a{
+    color: black;
+    text-decoration: none;
+    margin-right: 40px;
+}
+  
+.pagewrap{
+    padding-bottom: 127px;
+    background-image: url('../../Image/TextureEvent.png');
+    min-height: 150vh;
+}
+
+.so{
+    display: flexbox;
+    position: relative;
+    padding: 10px;
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-top: 42px;
+}
+
+#so-desc{
+    opacity: 1;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    letter-spacing: 0;
+    width: 632px;
+}
+
+.newarrival{
+    display: inline;
+}
+
+.footer{
+    display: flex;
+    background-color: #353535;
+    width: 100%;
+    height: 76px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 10;
+    color: #FFFFFF;
+  }
+  
+.footer-logo{
+    position: relative;
+    margin-left: 37px;
+    margin-top: 25px;
+  }
+  
+.footer-logo img{
+    width: 103px;
+  }
+  
+.footer-text{
+    position: relative;
+    margin-left: auto;
+    margin-right: 26px;
+    margin-top: 31px;
+  }
+
+@media (max-width: 768px){
+    .so img{
+        width: 700px;
+    }
+
+    .newarrival img{
+        height: 600px;
+        width: auto;
+    }
+}

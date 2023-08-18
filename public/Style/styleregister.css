@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container header {
+  font-size: 42px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.left {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  animation: fade-in 1000ms forwards;
+}
+
+.container form {
+  position: relative;
+  max-width: 640px;
+}
+
+.container form .fields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.container form .fields.login{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.fields.login .input-field {
+  width: 100%;
+}
+
+form .fields .input-field {
+  display: flex;
+  width: calc(100% / 2 - 15px);
+  flex-direction: column;
+}
+
+.input-field label {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.input-field input {
+  outline: none;
+  height: 38px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  padding: 0 15px;
+  margin: 8px 0;
+  border: 1px solid #FF9900;
+  border-radius: 5px;
+}
+
+.input-field input:is(:focus) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.check-box {
+  margin-top: 40px;
+}
+
+.check-box input[type="checkbox"]{
+  cursor: pointer;
+  accent-color: #FF9900;
+}
+
+.check-box label {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.btn-reg {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: #FF9900;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 35px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.btn-reg:hover {
+  background-color: #C67700;
+}
+
+.alr-account {
+  display: flex;
+  justify-content: center;
+}
+
+.alr-account h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.text{
+  color: #878787;
+  margin-right: 10px;
+}
+
+.text-btn {
+  text-decoration: underline;
+  color: #FF9900;
+  cursor: pointer;
+}
+
+.btn-back {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.btn-back:hover{
+  background-color: #FF9900;
+}
+
+@media (max-width: 768px) {
+  .left{
+    display: none;
+  }
+
+  .right {
+    padding: 0 15px;
+  }
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
